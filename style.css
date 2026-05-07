@@ -1,0 +1,43 @@
+body {
+    background-color: #0d1117;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;
+}
+
+.chat-app {
+    width: 450px; height: 85vh; background: #161b22;
+    border-radius: 15px; display: flex; flex-direction: column;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); overflow: hidden;
+}
+
+.chat-header {
+    padding: 15px; background: #21262d; border-bottom: 1px solid #30363d;
+    text-align: center; color: #58a6ff;
+}
+
+.status-dot {
+    width: 10px; height: 10px; background: #238636;
+    border-radius: 50%; display: inline-block; margin-right: 5px;
+}
+
+.chat-box {
+    flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column;
+}
+
+.message {
+    margin-bottom: 15px; padding: 10px; border-radius: 8px; max-width: 80%;
+}
+
+.received { background: #30363d; color: white; align-self: flex-start; }
+.sent { background: #1f6feb; color: white; align-self: flex-end; }
+
+.input-area {
+    padding: 15px; background: #21262d; display: flex; align-items: center;
+}
+
+input[type="text"] {
+    flex: 1; background: #0d1117; border: 1px solid #30363d;
+    color: white; padding: 10px; border-radius: 5px; margin: 0 10px;
+}
+
+.attach-btn { cursor: pointer; font-size: 20px; color: #8b949e; }
